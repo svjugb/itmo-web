@@ -1,4 +1,4 @@
-![alt text](https://github.com/svjugb/itmo-web/Assets/Images/Brawlgram.png)
+![alt text](https://github.com/svjugb/itmo-web/tree/main/Assets/Images/Brawlgram.png)
 # Brawlgram
 ## Description
 ***
