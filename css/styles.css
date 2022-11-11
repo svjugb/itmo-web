@@ -1,0 +1,150 @@
+@font-face {
+    font-family: 'fredoka-regular';
+    src: url('../assets/fonts/Fredoka-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'fredoka-bold';
+    src: url('../assets/fonts/Fredoka-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'fredoka-semibold';
+    src: url('../assets/fonts/Fredoka-SemiBold.ttf') format("truetype");
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Fredoka-Regular', serif;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-item-brawlgram {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.nav-item-brawlgram:hover {
+    opacity: 0.65;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+/*.navigation-list li {*/
+/*    height: 100%;*/
+/*    display: block;*/
+/*    text-decoration:none;*/
+/*    color:#fff;*/
+/*    user-select:none;*/
+/*}*/
+
+/*.navigation-list li img{*/
+/*    max-width:100%;*/
+/*}*/
+
+/*.navigation-list li:hover{*/
+/*    background-color:grey;*/
+/*    opacity: revert;*/
+/*}*/
+.nav-item {
+    /*background: black;*/
+    /*display: flex;*/
+    /*flex-direction: row;*/
+    /*justify-content: space-between;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 100;*/
+    /*width: 100%;*/
+    /*color: white;*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+
+.nav-item:hover {
+    border-radius: 0.2em;
+    border-color: grey;
+    background-color: grey;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.brawlgram-icon {
+    height: 3.5em;
+    /*width: 3em;*/
+}
+
+.regular-text {
+    font-size: 1.45rem;
+    text-align: center;
+    font-family: 'Fredoka-Regular', sans-serif;
+    color: white;
+}
+
+.semibold-text {
+    font-size: 1.5rem;
+    font-family: 'Fredoka-Semibold', sans-serif;
+    color: white;
+}
+
+.background-image {
+    background-image: url("../assets/images/Background.jpg");
+    width: 100%;
+    height: 100%;
+}
+
+.color-white-primary {
+    color: white;
+}
