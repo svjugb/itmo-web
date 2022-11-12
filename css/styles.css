@@ -1,0 +1,309 @@
+@font-face {
+    font-family: 'fredoka-regular';
+    src: url('../assets/fonts/Fredoka-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'fredoka-bold';
+    src: url('../assets/fonts/Fredoka-Bold.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: 'fredoka-semibold';
+    src: url('../assets/fonts/Fredoka-SemiBold.ttf') format("truetype");
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: 'Fredoka-Regular', serif;
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: black;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-list {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.nav-item-brawlgram {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+.nav-item-brawlgram:hover {
+    opacity: 0.65;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 4rem;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+
+.nav-item:hover {
+    border-radius: 0.2em;
+    border-color: grey;
+    background-color: grey;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+
+.brawlgram-icon {
+    height: 3.5em;
+}
+
+.menu-icon {
+    display: none;
+    margin: 0.4em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+"section section"
+"section section";
+}
+
+@media (max-width: 1000px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        grid-template-areas:
+    "section"
+    "section"
+    "section"
+    "section";
+    }
+
+    .nav-item {
+        padding: 15px 15px;
+    }
+
+    .semibold-text {
+        display: none;
+    }
+
+    .page-content {
+        padding: 2em 2em 5em 2em !important;
+    }
+}
+
+@media (max-width: 725px) {
+    .nav-item.regular-text {
+        display: none;
+    }
+    .semibold-text {
+        display: inline;
+    }
+
+    .wrapper {
+        margin: 1em 0;
+    }
+    .header{
+        position: relative;
+        display: flex;
+        align-items: center;
+        background-color: black;
+        flex-flow: row;
+        justify-content: space-between;
+        width:100%
+
+    }
+
+    .menu-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 0.95em;
+        height: 0.95em;
+    }
+    .page-content {
+        padding: 1em !important;
+    }
+}
+
+.mode-card {
+    border-radius: 25px;
+    border: 4px solid #000000;
+    overflow: hidden;
+
+}
+
+.mode-icon {
+    height: 53px;
+    padding: 0.2em 0.4em 0.2em 0.2em;
+}
+
+.knockout-color {
+    background: #EF9F3B;
+}
+
+.knockout-background {
+    background-image: url("../assets/images/KnockOutBackground.png");
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.brawlBall-color {
+    background-color: #8CA0E0;
+}
+
+.brawBball-background {
+    background-image: url("../assets/images/BrawlBallBackground.png");
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.showdown-color {
+    background-color: #390;
+}
+
+.hotZone-color {
+    background-color: #E33752;
+}
+
+.hotZone-background {
+    background-image: url("../assets/images/HotZoneBackground.png");
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.gemGrab-color {
+    background-color: #660066;
+}
+
+.gemGrab-background {
+    background-image: url("../assets/images/GemGrabBackground.png");
+    height: 110px;
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+.page-name {
+    font-family: 'Fredoka-Semibold', sans-serif;
+    font-size: 3.5rem;
+    color: white;
+    padding: 1em 0;
+}
+
+.mode-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.mode-name {
+    font-family: 'Fredoka-Semibold', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    padding: 0.2em 0 0 0;
+}
+
+.map-name {
+    font-family: 'Fredoka-Regular', sans-serif;
+    font-size: 1rem;
+    color: white;
+}
+
+.page-content {
+    padding: 2em 5em 5em 5em;
+}
+
+.page-background {
+    background-color: #343a40;
+    min-width: 420px;
+
+}
+
+.regular-text {
+    font-size: 1.45rem;
+    text-align: center;
+    font-family: 'Fredoka-Regular', sans-serif;
+    color: white;
+}
+
+.semibold-text {
+    font-size: 1.5rem;
+    font-family: 'Fredoka-Semibold', sans-serif;
+    color: white;
+}
+
+.footer-style {
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+}
+
+.footer-links {
+    font-size: 1rem;
+    font-family: 'Fredoka-Semibold', sans-serif;
+    color: white;
+    padding: 7em 1em;
+}
+
+.background-image {
+    background-image: url("../assets/images/Background.jpg");
+    width: 100%;
+    height: 100%;
+}
