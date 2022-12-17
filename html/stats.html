@@ -1,10 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Brawlgram</title>
+    <meta name="keywords" content="Brawlgram"/>
+    <meta name="description" content="Social network for brawl stars players"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/images/Brawlgram.png">
+    <script type="text/javascript" src="../scripts/main.js"></script>
 </head>
-<body>
 
+<body>
+<header class="header">
+    <nav class="navigation">
+        <div class="container">
+            <a href="index.html" class="nav-item-brawlgram"><img src="../assets/images/Brawlgram.png" alt="?"
+                                                                 class="brawlgram-icon">
+                <div class="semibold-text">Brawlgram</div>
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item regular-text" id="stats-nav">Stats</li>
+                <li class="nav-item regular-text" id="maps-nav" onclick="goToMapsPage()">Maps</li>
+                <li class="nav-item regular-text" onclick="alert('Hello')">Brawlers</li>
+                <li class="nav-item regular-text" id="game-modes-nav" onclick="goToGameModes()">Game modes</li>
+                <li class="nav-item regular-text" id="account-nav" onclick="goToAccountPage()">Account</li>
+            </ul>
+
+        </div>
+    </nav>
+    <span class="menu-icon"></span>
+</header>
+<main class="page-background">
+    <div class="page-content">
+        <div class="page-name">Daily events</div>
+        <div class="wrapper">
+            <section class="mode-card knockout-color">
+                <div class="mode-title">
+                    <img src="../assets/images/Knockout.png" alt="?" class="mode-icon">
+                    <div class="">
+                        <div class="mode-name">Knockout</div>
+                        <div class="map-name">New Perspective</div>
+                    </div>
+                </div>
+                <div class="knockout-background"></div>
+            </section>
+            <section class="mode-card hotZone-color">
+                <div class="mode-title">
+                    <img src="../assets/images/HotZone.png" alt="?" class="mode-icon">
+                    <div class="">
+                        <div class="mode-name">Hot zone</div>
+                        <div class="map-name">Ring of Fire</div>
+                    </div>
+                </div>
+                <div class="hotZone-background"></div>
+            </section>
+            <section class="mode-card gemGrab-color">
+                <div class="mode-title">
+                    <img src="../assets/images/Gem-Grab.png" alt="?" class="mode-icon">
+                    <div class="">
+                        <div class="mode-name">Gem Grab</div>
+                        <div class="map-name">Hard Rock Mine</div>
+                    </div>
+                </div>
+                <div class="gemGrab-background"></div>
+            </section>
+            <section class="mode-card brawlBall-color">
+                <div class="mode-title">
+                    <img src="../assets/images/Brawl-Ball.png" alt="?" class="mode-icon">
+                    <div class="">
+                        <div class="mode-name">Brawl Ball</div>
+                        <div class="map-name">Pinball Dreams</div>
+                    </div>
+                </div>
+                <div class="brawlBall-background"></div>
+            </section>
+        </div>
+    </div>
+
+</main>
+<footer id="footer">
+    <div class="footer-content" id='about'>
+        <div class="footer-social">
+            <div class="follow-footer">
+                <span class="follow-us">FOLLOW BRAWL STARS ON</span>
+                <div class="store-logos social">
+                    <a href="https://www.reddit.com/r/Brawlstars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_reddit.png"
+                            alt="reddit-image"/>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_youtube.png"
+                            alt="youtube-image"/>
+                    </a>
+                    <a href="https://www.facebook.com/brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_facebook.png"
+                            alt="facebook-image"/>
+                    </a>
+                    <a href="https://www.instagram.com/BrawlStars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_instagram.png"
+                            alt="instagram-image"/>
+                    </a>
+                    <a href="https://twitter.com/BrawlStars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_twitter.png"
+                            alt="twitter-image"/>
+                    </a>
+                    <a href="https://www.tiktok.com/@brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/220912063309/all/themes/supercell/img/18/icon_gs_tiktok.svg"
+                            alt="tiktok-image"/>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="store-logos footer-store">
+                    <a href="https://apps.apple.com/ua/app/brawl-stars/id1229016807?l=ru"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_appstore.png"
+                            alt="app-store-image"/>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ru&gl=US">
+                        <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_googleplay.png"
+                                alt="google-play-image"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li>About Author</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="company-info">
+                    <span>
+                        Brawlgram Inc.
+                        St. Petersburg
+                        Russia
+                    </span>
+            <span class="logo-footer"><img
+                    src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/logo_supercell@2x.png"
+                    alt="super-cell-logo"/></span>
+        </div>
+    </div>
+</footer>
+<script>
+    function goToAccountPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/account.html";
+    }
+    function goToMapsPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/maps.html"
+    }
+    function goToGameModes() {
+        window.location.href = "http://localhost:63342/itmo-web/html/game-modes.html";
+    }
+</script>
 </body>
 </html>

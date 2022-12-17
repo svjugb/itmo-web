@@ -18,6 +18,9 @@ function ready() {
     if (document.location.href.includes("/maps.html")){
         document.getElementById("maps-nav").classList.add("nav-item-selected")
     }
+    if (document.location.href.includes("/game-modes.html")){
+        document.getElementById("game-modes-nav").classList.add("nav-item-selected")
+    }
 }
 
 document.addEventListener("DOMContentLoaded", ready);

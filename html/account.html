@@ -23,7 +23,7 @@
                 <li class="nav-item regular-text" id="stats-nav" onclick="goToStatsPage()">Stats</li>
                 <li class="nav-item regular-text" id="maps-nav" onclick="goToMapsPage()">Maps</li>
                 <li class="nav-item regular-text" onclick="alert('Hello')">Brawlers</li>
-                <li class="nav-item regular-text" onclick="alert('Hello')">Game modes</li>
+                <li class="nav-item regular-text" id="game-modes-nav" onclick="goToGameModes()">Game modes</li>
                 <li class="nav-item regular-text" id="account-nav">Account</li>
             </ul>
 
@@ -179,6 +179,9 @@
     }
     function goToMapsPage() {
         window.location.href = "http://localhost:63342/itmo-web/html/maps.html"
+    }
+    function goToGameModes() {
+        window.location.href = "http://localhost:63342/itmo-web/html/game-modes.html";
     }
 </script>
 </body>
