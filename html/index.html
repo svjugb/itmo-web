@@ -7,6 +7,7 @@
     <meta name="description" content="Social network for brawl stars players"/>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="../assets/images/Brawlgram.png">
+    <script type="text/javascript" src="../scripts/main.js"></script>
 </head>
 
 <body>
@@ -18,11 +19,11 @@
                 <div class="semibold-text">Brawlgram</div>
             </a>
             <ul class="nav-list">
-                <li class="nav-item regular-text"><a href="stats.html">Stats</a></li>
-                <li class="nav-item regular-text"><a href="maps.html">Maps</a></li>
-                <li class="nav-item regular-text"><a href="brawlers.html">Brawlers</a></li>
-                <li class="nav-item regular-text"><a href="game-modes.html">Game modes</a></li>
-                <li class="nav-item regular-text"><a href="account.html">Account</a></li>
+                <li class="nav-item regular-text" id="stats-nav">Stats</li>
+                <li class="nav-item regular-text" id="maps-nav" onclick="goToMapsPage()">Maps</li>
+                <li class="nav-item regular-text" onclick="alert('Hello')">Brawlers</li>
+                <li class="nav-item regular-text" onclick="alert('Hello')">Game modes</li>
+                <li class="nav-item regular-text" id="account-nav" onclick="goToAccountPage()">Account</li>
             </ul>
 
         </div>
@@ -71,21 +72,84 @@
                         <div class="map-name">Pinball Dreams</div>
                     </div>
                 </div>
-                <div class="brawBball-background"></div>
+                <div class="brawlBall-background"></div>
             </section>
         </div>
     </div>
 
 </main>
-<footer class="footer-style">
-    <div class="footer-links">Private Policy</div>
-    <div class="footer-links">Contact us!</div>
-    <!--    <ul>-->
-    <!--        <li><a href="https://vk.com/svjugb" target="_blank"> Author</a></li>-->
-    <!--        <li><a href="https://discord.gg/VamuXaes" target="_blank"> Discord channel</a></li>-->
-    <!--        <li><a href="https://t.me/+J163W37kPIg0MzZi" target="_blank"> Telegram channel</a></li>-->
-
-    <!--    </ul>-->
+<footer id="footer">
+    <div class="footer-content" id='about'>
+        <div class="footer-social">
+            <div class="follow-footer">
+                <span class="follow-us">FOLLOW BRAWL STARS ON</span>
+                <div class="store-logos social">
+                    <a href="https://www.reddit.com/r/Brawlstars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_reddit.png"
+                            alt="reddit-image"/>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_youtube.png"
+                            alt="youtube-image"/>
+                    </a>
+                    <a href="https://www.facebook.com/brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_facebook.png"
+                            alt="facebook-image"/>
+                    </a>
+                    <a href="https://www.instagram.com/BrawlStars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_instagram.png"
+                            alt="instagram-image"/>
+                    </a>
+                    <a href="https://twitter.com/BrawlStars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_twitter.png"
+                            alt="twitter-image"/>
+                    </a>
+                    <a href="https://www.tiktok.com/@brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/220912063309/all/themes/supercell/img/18/icon_gs_tiktok.svg"
+                            alt="tiktok-image"/>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="store-logos footer-store">
+                    <a href="https://apps.apple.com/ua/app/brawl-stars/id1229016807?l=ru"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_appstore.png"
+                            alt="app-store-image"/>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ru&gl=US">
+                        <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_googleplay.png"
+                                alt="google-play-image"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li>About Author</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="company-info">
+                    <span>
+                        Brawlgram Inc.
+                        St. Petersburg
+                        Russia
+                    </span>
+            <span class="logo-footer"><img
+                    src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/logo_supercell@2x.png"
+                    alt="super-cell-logo"/></span>
+        </div>
+    </div>
 </footer>
+<script>
+    function goToAccountPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/account.html";
+    }
+    function goToMapsPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/maps.html"
+    }
+</script>
 </body>
 </html>

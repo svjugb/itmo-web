@@ -1,10 +1,185 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Brawlgram</title>
+    <meta name="keywords" content="Brawlgram"/>
+    <meta name="description" content="Social network for brawl stars players"/>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="icon" href="../assets/images/Brawlgram.png">
+    <script type="text/javascript" src="../scripts/main.js"></script>
 </head>
-<body>
 
+<body>
+<header class="header">
+    <nav class="navigation">
+        <div class="container">
+            <a href="index.html" class="nav-item-brawlgram"><img src="../assets/images/Brawlgram.png" alt="?"
+                                                                 class="brawlgram-icon">
+                <div class="semibold-text">Brawlgram</div>
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item regular-text" id="stats-nav" onclick="goToStatsPage()">Stats</li>
+                <li class="nav-item regular-text" id="maps-nav" onclick="goToMapsPage()">Maps</li>
+                <li class="nav-item regular-text" onclick="alert('Hello')">Brawlers</li>
+                <li class="nav-item regular-text" onclick="alert('Hello')">Game modes</li>
+                <li class="nav-item regular-text" id="account-nav">Account</li>
+            </ul>
+
+        </div>
+    </nav>
+    <span class="menu-icon"></span>
+</header>
+<main>
+    <section class="bg-block">
+        <div class="bg-header"><img src="https://www.playstrong.it/wp-content/uploads/2019/02/brawl_sunset.jpg"
+                                    alt="main-bg-image"/></div>
+        <div class="bg-header-title">
+            <h1>Brawlgram</h1>
+            <h3>Website for those who want to know more about Brawl Starts</h3>
+        </div>
+    </section>
+    <section class="mobile-block teamup" id="teamup">
+        <div class="smartphone-with-game">
+            <img src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/bg_intro_brawlstars.jpg"
+                 alt="team-up-screenshot"/>
+        </div>
+        <div class="text-box onleft">
+            <h3>TEAM UP AND JUMP INTO MAYHEM!</h3>
+            <p>Time to BRAWL! Team up with your friends and get ready for epic multiplayer MAYHEM! Brawl Stars is
+                the
+                newest game from the makers of Clash of Clans and Clash Royale. Jump into your favorite game mode
+                and
+                play quick matches with your friends. Shoot 'em up, blow 'em up, punch 'em out and win the
+                BRAWL.</p>
+            <div class="store-logos download">
+                <a href="https://apps.apple.com/ua/app/brawl-stars/id1229016807?l=ru"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_appstore.png"
+                        alt="app-store-image"/>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ru&gl=US"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_googleplay.png"
+                        alt="google-play-image"/>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="mobile-block social" id="social">
+        <div class="text-box onright">
+            <h3>STAY UP-TO-DATE</h3>
+            <p>To stay on top of your game, keep an eye on the in-game News section. Follow us on social media for
+                the
+                latest chatter and sneak peeks on what the team is working on. Don’t be a stranger and join the
+                conversation.</p>
+            <span class="follow-us">FOLLOW BRAWL STARS ON</span>
+            <div class="store-logos social">
+                <a href="https://www.reddit.com/r/Brawlstars/"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_reddit.png"
+                        alt="reddit-image"/>
+                </a>
+                <a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_youtube.png"
+                        alt="youtube-image"/>
+                </a>
+                <a href="https://www.facebook.com/brawlstars"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_facebook.png"
+                        alt="facebook-image"/>
+                </a>
+                <a href="https://www.instagram.com/BrawlStars/"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_instagram.png"
+                        alt="instagram-image"/>
+                </a>
+                <a href="https://twitter.com/BrawlStars"> <img
+                        src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_twitter.png"
+                        alt="twitter-image"/>
+                </a>
+                <a href="https://www.tiktok.com/@brawlstars"> <img
+                        src="https://cdn.supercell.com/supercell.com/220912063309/all/themes/supercell/img/18/icon_gs_tiktok.svg"
+                        alt="tiktok-image"/>
+                </a>
+            </div>
+        </div>
+        <div class="smartphone-with-game">
+            <img src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/bg_gamewebsite_brawlstars.png"
+                 alt="social-screenshot"/>
+        </div>
+    </section>
+
+</main>
+<footer id="footer">
+    <div class="footer-content" id='about'>
+        <div class="footer-social">
+            <div class="follow-footer">
+                <span class="follow-us">FOLLOW BRAWL STARS ON</span>
+                <div class="store-logos social">
+                    <a href="https://www.reddit.com/r/Brawlstars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_reddit.png"
+                            alt="reddit-image"/>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCooVYzDxdwTtGYAkcPmOgOw"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_youtube.png"
+                            alt="youtube-image"/>
+                    </a>
+                    <a href="https://www.facebook.com/brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_facebook.png"
+                            alt="facebook-image"/>
+                    </a>
+                    <a href="https://www.instagram.com/BrawlStars/"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_instagram.png"
+                            alt="instagram-image"/>
+                    </a>
+                    <a href="https://twitter.com/BrawlStars"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/icon_gs_twitter.png"
+                            alt="twitter-image"/>
+                    </a>
+                    <a href="https://www.tiktok.com/@brawlstars"> <img
+                            src="https://cdn.supercell.com/supercell.com/220912063309/all/themes/supercell/img/18/icon_gs_tiktok.svg"
+                            alt="tiktok-image"/>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="store-logos footer-store">
+                    <a href="https://apps.apple.com/ua/app/brawl-stars/id1229016807?l=ru"> <img
+                            src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_appstore.png"
+                            alt="app-store-image"/>
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.supercell.brawlstars&hl=ru&gl=US">
+                        <img
+                                src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/18/footer_googleplay.png"
+                                alt="google-play-image"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-menu">
+            <ul>
+                <li>About Author</li>
+                <li>Terms of Service</li>
+                <li>Privacy Policy</li>
+            </ul>
+        </div>
+        <div class="company-info">
+                    <span>
+                        Brawlgram Inc.
+                        St. Petersburg
+                        Russia
+                    </span>
+            <span class="logo-footer"><img
+                    src="https://cdn.supercell.com/supercell.com/191205152910/all/themes/supercell/img/logo_supercell@2x.png"
+                    alt="super-cell-logo"/></span>
+        </div>
+    </div>
+</footer>
+
+<script>
+    function goToStatsPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/index.html";
+    }
+    function goToMapsPage() {
+        window.location.href = "http://localhost:63342/itmo-web/html/maps.html"
+    }
+</script>
 </body>
 </html>
